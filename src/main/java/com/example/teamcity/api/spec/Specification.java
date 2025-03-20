@@ -40,7 +40,7 @@ public class Specification {
         return requestBuilder;
     }
 
-    public RequestSpecification unAuthSpec(){
+    public RequestSpecification unauthSpec(){
         return reqBuilder().build();
     }
 
