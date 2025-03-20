@@ -12,10 +12,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class User extends BaseModel {
+public class BuildType extends BaseModel{
+
+    private String id;
     @Random
-    private String username;
-    @Random
-    private String password;
-    private Roles roles;
+    private String name;
+    private Project project;
+    private Steps steps;
 }

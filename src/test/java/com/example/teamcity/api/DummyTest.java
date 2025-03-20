@@ -7,15 +7,5 @@ import org.testng.annotations.Test;
 
 public class DummyTest extends BaseApiTest {
 
-    @Test
-    public void userShouldBeAbleGetAllProjects(){
-        RestAssured
-                .given()
-                .spec(Specification.getSpecification()
-                        .authSpec(User.builder()
-                                .user("admin")
-                                .password("admin").build()))
-                .get("/app/rest/projects");
-    }
 
 }
